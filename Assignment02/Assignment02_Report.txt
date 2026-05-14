@@ -1,6 +1,6 @@
 
-  ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT (OFFICIAL)
-  Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
+ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT (OFFICIAL)
+Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
 
 
 1. DATASET OVERVIEW
@@ -38,7 +38,6 @@ Five charts were generated using matplotlib to visualise key findings.
   1. CSV Encoding Error     → Added encoding='latin1' to pd.read_csv()
   2. SQL-Unfriendly Columns → Renamed: spaces/hyphens → underscores, lowercased
   3. Date Format Mismatch   → Converted MM/DD/YYYY to YYYY-MM-DD via pd.to_datetime()
-  4. matplotlib Missing     → Installed via pip install matplotlib
   5. Notebook Cell ID Warning → Programmatically added UUID 'id' fields to cells
   6. In-Memory DB Lost on Restart → Accepted trade-off; first cells always recreate DB
 
