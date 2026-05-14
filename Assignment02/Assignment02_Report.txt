@@ -1,6 +1,6 @@
 
-  ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT
-  Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
+ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT
+Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
 
 
 1. DATASET OVERVIEW
