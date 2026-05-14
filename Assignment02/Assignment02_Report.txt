@@ -1,71 +1,165 @@
 
-ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT (OFFICIAL)
+ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT
 Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
 
 
 1. DATASET OVERVIEW
-The Sample Superstore dataset contains 4 years (2014–2017) of US retail
-transaction data with 9,994 order line items across 21 columns.
+
+For this assignment, I worked with the Sample Superstore dataset — a popular
+retail dataset that captures four years of US order transactions (2014–2017),
+with 9,994 order line items spread across 21 columns. It covers everything
+from customer and product details to sales figures, discounts, and profit
+values, making it a great fit for SQL-based business analysis.
 
   Total Revenue    : ~$2.30 million      Unique Orders   : ~5,009
   Total Profit     : ~$286,000           Unique Customers: 793
   Overall Margin   : ~12.5%              Missing Values  : 0
   Geography        : 49 US states, 4 regions
 
-Key columns: Order Date, Ship Date, Region, Category, Sub-Category,
-             Sales, Quantity, Discount, Profit, Segment, Ship Mode
+The key columns I worked with throughout the analysis were: Order Date,
+Ship Date, Region, Category, Sub-Category, Sales, Quantity, Discount,
+Profit, Segment, and Ship Mode.
+
 
 2. APPROACH
-The dataset was loaded into an in-memory SQLite database via Python (pandas +
-sqlite3). Column names were cleaned to be SQL-safe. A helper function ran all
-queries and returned results as DataFrames. 30+ SQL queries were written across
-7 steps:
 
-  1. Load CSV into SQLite
-  2. Explore schema, sample rows, summary statistics
-  3. Filter with WHERE (region, category, date range, sales value)
-  4. Aggregate with GROUP BY (sales/profit by region, category, segment)
-  5. Rank with ORDER BY + LIMIT (top products, states, loss-makers)
-  6. Business use cases: monthly trends, YoY growth, top customers,
-     discount impact, loss orders, shipping performance, cross-tabulation
-  7. Data quality validation (NULLs, negative values, date logic, row counts)
+The dataset was loaded into an in-memory SQLite database using Python —
+specifically pandas for reading the CSV and sqlite3 for the SQL engine.
+Before loading, I cleaned up the column names (replacing spaces and hyphens
+with underscores, and lowercasing everything) so they would work cleanly
+in SQL queries. I also wrote a small helper function to run any query and
+return the result as a readable DataFrame, which kept the notebook tidy
+throughout.
 
-SQL features used: SELECT/WHERE/GROUP BY/HAVING, SUM/AVG/COUNT, CASE WHEN,
-strftime(), julianday(), ROW_NUMBER() OVER(), subqueries, pandas pivoting.
-Five charts were generated using matplotlib to visualise key findings.
+The analysis was structured into 7 steps:
 
-3. CHALLENGES & SOLUTIONS
-  1. CSV Encoding Error     → Added encoding='latin1' to pd.read_csv()
-  2. SQL-Unfriendly Columns → Renamed: spaces/hyphens → underscores, lowercased
-  3. Date Format Mismatch   → Converted MM/DD/YYYY to YYYY-MM-DD via pd.to_datetime()
-  5. Notebook Cell ID Warning → Programmatically added UUID 'id' fields to cells
-  6. In-Memory DB Lost on Restart → Accepted trade-off; first cells always recreate DB
+  1. Load the CSV into SQLite
+  2. Explore the schema, sample rows, and summary statistics
+  3. Filter with WHERE across region, category, date range, and sales value
+  4. Aggregate with GROUP BY to compare sales and profit by region,
+     category, segment, and ship mode
+  5. Rank results with ORDER BY and LIMIT — top products, top states,
+     and worst-performing sub-categories
+  6. Answer 8 specific business questions: monthly trends, year-over-year
+     category growth, top customers, discount impact on profit, loss-making
+     orders, shipping performance, duplicate detection, and a region-by-
+     category cross-tabulation
+  7. Validate data quality — checking for NULLs, negative sales, invalid
+     discounts, date logic issues, and row count accuracy
 
-4. KEY OBSERVATIONS
-  1. Revenue grew 51% (2014–2017) but profit margin stayed flat at ~12%
-  2. West region leads in both sales and profit; Central has the worst margin ratio
-  3. Technology = highest revenue & profit; Office Supplies = most efficient margin
-  4. Tables and Bookcases are loss-making sub-categories (heavy discounting ~30%+)
-  5. Discounts above 20% push orders into net loss territory — critical finding
-  6. Q4 (Nov–Dec) is consistently the peak season every year; Q1 is the slowest
-  7. Top 10 customers drive disproportionate revenue (Sean Miller: $25K+ alone)
-  8. Data quality is excellent — zero NULLs, no invalid values across all 9,994 rows
+SQL features used throughout: SELECT, WHERE, GROUP BY, HAVING, ORDER BY,
+SUM, AVG, COUNT, CASE WHEN, strftime(), julianday(), ROW_NUMBER() OVER(),
+subqueries, and pandas pivoting for cross-tabulation. Five charts were also
+generated using matplotlib to visually support the key findings.
+
+
+3. CHALLENGES AND HOW I SOLVED THEM
+
+Every project has its friction points, and this one was no different. Here
+is what I ran into and how I worked through each issue:
+
+  1. CSV Encoding Error
+     The file uses latin1 encoding, not UTF-8, which caused a
+     UnicodeDecodeError on the first load attempt. Adding encoding='latin1'
+     to pd.read_csv() fixed it immediately.
+
+  2. SQL-Unfriendly Column Names
+     Column names like "Order Date" and "Sub-Category" break SQL syntax.
+     I cleaned them all — replaced spaces and hyphens with underscores
+     and lowercased everything — making them safe and easy to query.
+
+  3. Date Format Mismatch
+     Dates in the CSV were in MM/DD/YYYY format. SQLite treats them as text,
+     so date-range filters would silently return wrong results without a
+     format fix. I used pd.to_datetime() to convert them to YYYY-MM-DD
+     (ISO 8601) before loading, which SQLite handles correctly.
+
+  4. Notebook Cell ID Warning
+     nbconvert flagged a MissingIDFieldWarning on every cell because the
+     notebook was missing the 'id' field that nbformat 5.1+ requires. I
+     wrote a short script using Python's json and uuid modules to add a
+     unique UUID to every cell and update the nbformat version. Warning gone.
+
+  5. In-Memory Database Resets on Kernel Restart
+     SQLite in-memory databases don't persist across sessions. This is an
+     accepted trade-off for the simplicity and portability it offers — I
+     structured the notebook so the first few cells always recreate the
+     database, keeping everything reproducible.
+
+
+4. KEY FINDINGS
+
+  1. Revenue grew 51% from 2014 to 2017, but the profit margin stayed flat
+     at around 12% throughout — growth without improving efficiency.
+
+  2. The West region leads in both sales and profit. The Central region is
+     the outlier — decent sales volume, but the weakest profit margin of
+     all four regions.
+
+  3. Technology generates the highest revenue and profit overall. Office
+     Supplies has the best margin efficiency. Furniture is the problem area.
+
+  4. Tables and Bookcases are loss-making sub-categories, dragged down by
+     average discounts of 30% or more, which wipe out any margin entirely.
+
+  5. Discounts above 20% consistently push orders into net loss territory —
+     this was the single most important finding in the analysis.
+
+  6. Q4 (November and December) is the peak season every year without
+     exception. January and February are consistently the slowest months.
+
+  7. The top 10 customers account for a disproportionately large share of
+     revenue. Sean Miller alone has spent over $25,000 — more than three
+     times the average customer.
+
+  8. Data quality is excellent — zero NULLs and no invalid values across
+     all 9,994 rows, which made it easy to focus on analysis rather than
+     cleaning.
+
 
 5. CHARTS SUMMARY
-  Chart 1 — sales_profit_by_region.png    : Sales vs Profit by region (bar)
-  Chart 2 — profit_by_subcategory.png     : Profit/loss per sub-category (red = loss)
-  Chart 3 — monthly_trend.png             : Monthly sales & profit trend 2014–2017
-  Chart 4 — yoy_category.png              : Year-over-year sales by category
-  Chart 5 — discount_impact.png           : Total profit by discount band (red = loss)
+
+  Chart 1 — sales_profit_by_region.png
+    Side-by-side bar charts comparing total sales and total profit per
+    region. Makes the Central region's margin imbalance immediately visible.
+
+  Chart 2 — profit_by_subcategory.png
+    Horizontal bar chart showing profit or loss for all 17 sub-categories.
+    Red bars indicate net losses. Tables and Bookcases stand out clearly.
+
+  Chart 3 — monthly_trend.png
+    Dual-axis line chart tracking monthly sales and profit from 2014 to
+    2017. Shows the consistent Q4 spike and the overall upward trend.
+
+  Chart 4 — yoy_category.png
+    Grouped bar chart showing year-over-year sales growth by category.
+    Technology's acceleration is clearly visible by 2017.
+
+  Chart 5 — discount_impact.png
+    Bar chart grouping orders into discount bands and showing total profit
+    per band. Profit turns negative at the 21-30% band and gets worse from
+    there. The 20% threshold is unmistakable.
+
 
 6. RECOMMENDATIONS
-  1. Cap discounts at 20% — orders above this threshold lose money on average
-  2. Review Tables & Bookcases pricing — actively loss-making sub-categories
-  3. Invest in Technology in the West — highest combined revenue and margin
-  4. Investigate Central region's poor profitability relative to its sales volume
-  5. Build Q4 inventory and marketing plans to capitalise on the seasonal peak
-  6. Audit heavy-discount customers to assess whether their long-term value
-     justifies the reduced margin
+
+  1. Cap discounts at 20% — beyond this point, orders lose money on average.
+     This single policy change could meaningfully improve overall margins.
+
+  2. Review Tables and Bookcases pricing — both sub-categories are currently
+     loss-making and need either price increases or stricter discount limits.
+
+  3. Continue investing in Technology, especially in the West — it offers
+     the best combination of revenue volume and profit margin.
+
+  4. Investigate why the Central region's profit lags so far behind its
+     sales volume — discounting practices or product mix may be the cause.
+
+  5. Plan Q4 inventory and marketing well in advance — the seasonal spike
+     is predictable every year and should be prepared for, not reacted to.
+
+  6. Review high-discount accounts like Sean Miller to assess whether
+     their long-term purchase value actually justifies the reduced margin.
 
 
   END OF REPORT
