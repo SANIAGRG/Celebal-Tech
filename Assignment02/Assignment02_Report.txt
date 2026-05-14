@@ -1,0 +1,73 @@
+
+  ASSIGNMENT 02 — SQL SALES ANALYSIS REPORT (OFFICIAL)
+  Dataset: Sample - Superstore.csv  |  Tool: Python + SQLite + Jupyter Notebook
+
+
+1. DATASET OVERVIEW
+The Sample Superstore dataset contains 4 years (2014–2017) of US retail
+transaction data with 9,994 order line items across 21 columns.
+
+  Total Revenue    : ~$2.30 million      Unique Orders   : ~5,009
+  Total Profit     : ~$286,000           Unique Customers: 793
+  Overall Margin   : ~12.5%              Missing Values  : 0
+  Geography        : 49 US states, 4 regions
+
+Key columns: Order Date, Ship Date, Region, Category, Sub-Category,
+             Sales, Quantity, Discount, Profit, Segment, Ship Mode
+
+2. APPROACH
+The dataset was loaded into an in-memory SQLite database via Python (pandas +
+sqlite3). Column names were cleaned to be SQL-safe. A helper function ran all
+queries and returned results as DataFrames. 30+ SQL queries were written across
+7 steps:
+
+  1. Load CSV into SQLite
+  2. Explore schema, sample rows, summary statistics
+  3. Filter with WHERE (region, category, date range, sales value)
+  4. Aggregate with GROUP BY (sales/profit by region, category, segment)
+  5. Rank with ORDER BY + LIMIT (top products, states, loss-makers)
+  6. Business use cases: monthly trends, YoY growth, top customers,
+     discount impact, loss orders, shipping performance, cross-tabulation
+  7. Data quality validation (NULLs, negative values, date logic, row counts)
+
+SQL features used: SELECT/WHERE/GROUP BY/HAVING, SUM/AVG/COUNT, CASE WHEN,
+strftime(), julianday(), ROW_NUMBER() OVER(), subqueries, pandas pivoting.
+Five charts were generated using matplotlib to visualise key findings.
+
+3. CHALLENGES & SOLUTIONS
+  1. CSV Encoding Error     → Added encoding='latin1' to pd.read_csv()
+  2. SQL-Unfriendly Columns → Renamed: spaces/hyphens → underscores, lowercased
+  3. Date Format Mismatch   → Converted MM/DD/YYYY to YYYY-MM-DD via pd.to_datetime()
+  4. matplotlib Missing     → Installed via pip install matplotlib
+  5. Notebook Cell ID Warning → Programmatically added UUID 'id' fields to cells
+  6. In-Memory DB Lost on Restart → Accepted trade-off; first cells always recreate DB
+
+4. KEY OBSERVATIONS
+  1. Revenue grew 51% (2014–2017) but profit margin stayed flat at ~12%
+  2. West region leads in both sales and profit; Central has the worst margin ratio
+  3. Technology = highest revenue & profit; Office Supplies = most efficient margin
+  4. Tables and Bookcases are loss-making sub-categories (heavy discounting ~30%+)
+  5. Discounts above 20% push orders into net loss territory — critical finding
+  6. Q4 (Nov–Dec) is consistently the peak season every year; Q1 is the slowest
+  7. Top 10 customers drive disproportionate revenue (Sean Miller: $25K+ alone)
+  8. Data quality is excellent — zero NULLs, no invalid values across all 9,994 rows
+
+5. CHARTS SUMMARY
+  Chart 1 — sales_profit_by_region.png    : Sales vs Profit by region (bar)
+  Chart 2 — profit_by_subcategory.png     : Profit/loss per sub-category (red = loss)
+  Chart 3 — monthly_trend.png             : Monthly sales & profit trend 2014–2017
+  Chart 4 — yoy_category.png              : Year-over-year sales by category
+  Chart 5 — discount_impact.png           : Total profit by discount band (red = loss)
+
+6. RECOMMENDATIONS
+  1. Cap discounts at 20% — orders above this threshold lose money on average
+  2. Review Tables & Bookcases pricing — actively loss-making sub-categories
+  3. Invest in Technology in the West — highest combined revenue and margin
+  4. Investigate Central region's poor profitability relative to its sales volume
+  5. Build Q4 inventory and marketing plans to capitalise on the seasonal peak
+  6. Audit heavy-discount customers to assess whether their long-term value
+     justifies the reduced margin
+
+
+  END OF REPORT
+
