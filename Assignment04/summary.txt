@@ -1,0 +1,19 @@
+Brief Summary:-
+
+I started by setting up my cloud environment in Azure, creating a Resource Group to keep 
+everything organized, a Storage Account (storagect) to hold my data, and a Data Factory 
+(datafactoryct0) to handle the data movement. Inside my storage, I made two separate 
+folders: a source container where I uploaded my initial data file (superstore_utf8.csv) 
+and a destination container for the final output. Next, I jumped into Azure Data Factory 
+to build the migration pipeline, setting up secure connections and creating two datasets 
+to define where the data was coming from and where it was going. I designed the pipeline 
+workflow by connecting a Get Metadata activity to check the file details, followed by a 
+Copy Data activity to perform the actual file transfer. When I ran into a few technical 
+errors regarding data limits and permission blocks, I fixed them by clearing the schema 
+constraints and adjusting the Data Integration Units. I also went into Azure Access 
+Control (IAM) to set up proper security, giving myself a Reader role and granting my 
+Data Factory the Storage Blob Data Contributor role so it had permission to write files. 
+Finally, I published all my changes live, clicked "Trigger Now" to run the pipeline, and 
+watched it finish with a successful green status in the Monitor dashboard. To wrap 
+everything up, I checked my destination container and verified that the data had moved 
+perfectly and created the new superstore_utf8.txt file.
