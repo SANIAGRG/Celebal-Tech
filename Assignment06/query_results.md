@@ -7,7 +7,7 @@
 - **Cluster Manager** — the resource broker (Standalone, YARN, Kubernetes, Mesos) that the Driver asks for compute. It doesn't run any user code — its only job is to launch and track Executor processes on worker nodes per the Driver's request.
 - **Executor** — JVM processes on worker nodes that actually run the scheduled tasks in parallel, hold cached partitions in memory/disk across operations, and stream status + results back to the Driver.
 
-**Result (genuine output from a live local session, `spark_assignment.py`):**
+**Result (output from a live local session, `spark_assignment.py`):**
 | Property | Value |
 |---|---|
 | Cluster manager | `local[*]` |
@@ -26,7 +26,7 @@
 
 **Insight:** Because the *entire* chain is visible to Spark's Catalyst optimizer before anything runs, it can rewrite the plan as a whole — pushing filters down to the source, pruning unused columns, reordering predicates to run the cheapest/most-selective filter first, and fusing many narrow row-by-row operations into a single pass per partition (pipelining). The practical effect on a long chain of `.filter().select().withColumn().orderBy()` calls: the dataset is scanned **once**, with the minimum necessary work per row, instead of materializing — and re-reading — an intermediate result after every line, the way eager row-at-a-time engines do.
 
-**Result (genuine `.explain()` / `.show(3)` output for `df.filter(category=='Electronics').select(...).withColumn("price_with_tax",...).orderBy(...)`):**
+**Result (`.explain()` / `.show(3)` output for `df.filter(category=='Electronics').select(...).withColumn("price_with_tax",...).orderBy(...)`):**
 ```
 == Physical Plan ==
 AdaptiveSparkPlan isFinalPlan=false
@@ -60,7 +60,7 @@ df = (spark.read
         .csv("data/source.csv"))
 ```
 
-**Result (genuine `printSchema()` / `show(5)` output):**
+**Result (`printSchema()` / `show(5)` output):**
 ```
 root
  |-- user_id: integer (nullable = true)
@@ -113,7 +113,7 @@ only showing top 5 rows
 df.select("product_id", "price").filter(F.col("category") == "Electronics")
 ```
 
-**Result (genuine `.show()` output):**
+**Result (`.show()` output):**
 ```
 +----------+-----+
 |product_id|price|
@@ -162,7 +162,7 @@ Schema confirms `new_name: string, price: double` after revision — `old_name` 
 
 When a worker node fails mid-job, the Driver detects the lost partitions (missed heartbeats / failed task results), looks up *only those partitions'* lineage, and **re-schedules just the lost tasks** on healthy executors. Spark recomputes the missing partitions by replaying the recorded transformations against the original source data — it never needs to recompute the whole job, and it never needed to replicate data up front.
 
-**Result (genuine `chained.rdd.toDebugString()` output for the Q2 pipeline):**
+**Result (`chained.rdd.toDebugString()` output for the Q2 pipeline):**
 ```
 (1) MapPartitionsRDD[41] at javaToPython at NativeMethodAccessorImpl.java:0 []
  |  MapPartitionsRDD[40] at javaToPython at NativeMethodAccessorImpl.java:0 []
@@ -186,7 +186,7 @@ Read bottom-up: the chain is **rooted in `FileScanRDD[30]`** (the raw `source.cs
 df_orders.filter((F.col("status") == "Completed") & (F.col("amount") > 1000))
 ```
 
-**Result (genuine `.show()` output — `df_orders` is `df` with `product_name` aliased to `order_item`):**
+**Result (`.show()` output — `df_orders` is `df` with `product_name` aliased to `order_item`):**
 ```
 +----------+--------------------+---------+------+
 |product_id|          order_item|   status|amount|
@@ -222,7 +222,7 @@ The **code shown above is the correct, complete answer** and runs unmodified on 
 ```
 PushedFilters: [IsNotNull(category), EqualTo(category,Electronics)]
 ```
-on a `FileScan` node for the *exact same* filter — confirming Catalyst genuinely builds and attaches a `PushedFilters` clause for this predicate. Reading from `parquet(...)` instead of `csv(...)` would produce the identical `PushedFilters` clause on a `FileScan parquet` node — with the crucial difference described in the Insight below.
+on a `FileScan` node for the *exact same* filter — confirming Catalyst builds and attaches a `PushedFilters` clause for this predicate. Reading from `parquet(...)` instead of `csv(...)` would produce the identical `PushedFilters` clause on a `FileScan parquet` node — with the crucial difference described in the Insight below.
 
 **Insight — the nuance the live CSV plan exposes:** seeing `PushedFilters` appear on a *CSV* scan (Q2's plan) could make it look like CSV gets the same benefit. It doesn't, and the difference is exactly what makes Parquet special: for CSV, `PushedFilters` only means "evaluate this condition as each row is parsed, instead of after" — Spark still must read and tokenize **every byte of every row** because text has no internal structure to skip by. For Parquet, the *same-looking* `PushedFilters` clause additionally lets the reader consult per-row-group min/max statistics **before** decompressing anything, and skip whole row-groups wholesale — the file's columnar, binary layout is what makes that skip physically possible. On a partitioned, multi-GB Parquet table that distinction can mean the difference between physically reading 2 GB and 20 MB; on CSV, the byte count is the byte count no matter how the filter is written.
 
@@ -234,7 +234,7 @@ on a `FileScan` node for the *exact same* filter — confirming Catalyst genuine
 df.withColumn("final_price", F.round(F.col("base_price") * 1.18, 2))
 ```
 
-**Result (genuine `.show(5)` output):**
+**Result (`.show(5)` output):**
 ```
 +----------+----------+-----------+
 |product_id|base_price|final_price|
@@ -261,7 +261,7 @@ only showing top 5 rows
 | Returns | A new DataFrame/RDD | A value to the driver, or a side effect (write to storage) |
 | Examples | `.filter()`, `.select()`, `.withColumn()`, `.groupBy()`, `.join()`, `.map()` | `.count()`, `.collect()`, `.show()`, `.write()`, `.take()`, `.reduce()` |
 
-**Result (genuine output — `t1 = df.filter(amount > 500)`, `t2 = t1.select("product_id","amount")`):**
+**Result (output — `t1 = df.filter(amount > 500)`, `t2 = t1.select("product_id","amount")`):**
 ```
 Two transformations chained — 0 Spark jobs triggered so far.
 count() -> 8 rows matched   |   take(3) -> [Row(product_id='P1001', amount=1499.5),
@@ -283,7 +283,7 @@ Building `t1` and `t2` printed nothing and ran nothing — pure plan-building. T
       .write.option("header", "true").csv("path/to/output"))
 ```
 
-**Result — same environment limitation as Q9:** the Parquet *write* used to materialize `"path/to/input"` fails locally with the identical `HADOOP_HOME and hadoop.home.dir are unset` error (winutils.exe missing on Windows), so the full read→filter→write chain can't complete end-to-end on this machine. Rather than fabricate a result, the script catches this and instead runs **just the filter logic** directly against the CSV-sourced `df` (no write involved) to genuinely prove out the row counts the real pipeline would produce:
+**Result — same environment limitation as Q9:** the Parquet *write* used to materialize `"path/to/input"` fails locally with the identical `HADOOP_HOME and hadoop.home.dir are unset` error (winutils.exe missing on Windows), so the full read→filter→write chain can't complete end-to-end on this machine. Rather than fabricate a result, the script catches this and instead runs **just the filter logic** directly against the CSV-sourced `df` (no write involved) to prove out the row counts the real pipeline would produce:
 ```
 Rows before filter: 18
 Rows after  filter: 15  (rows with null user_id dropped)
@@ -300,7 +300,7 @@ This matches the data exactly — `source.csv` has 3 blank `user_id` cells (rows
 - **Client mode** — the **Driver runs on the machine that submitted the job** (your laptop, a notebook server, an edge node) — *outside* the cluster. Executors run in the cluster and communicate back to that external Driver. Great for interactive work (`spark-shell`, notebooks, iterative debugging with live output), but the job dies the instant that machine disconnects, and every Driver↔Executor message pays a network hop in/out of the cluster.
 - **Cluster mode** — the **Cluster Manager launches the Driver itself inside the cluster** (on one of the worker nodes), alongside the Executors. The submitting machine can disconnect the moment the job is accepted — the application keeps running unattended. This is the standard for production/scheduled batch jobs: it's resilient to the submitter going away, and the Driver sits physically close to its Executors.
 
-**Result (genuine output):** `spark.conf.get("spark.submit.deployMode", ...)` reported **`client`** for this local session — exactly as expected, since `local[*]` always runs the Driver in the same process that launched it.
+**Result (output):** `spark.conf.get("spark.submit.deployMode", ...)` reported **`client`** for this local session — exactly as expected, since `local[*]` always runs the Driver in the same process that launched it.
 
 **Insight:** The rule of thumb: **client mode for development and interactive exploration** (you want to see `print()`/`show()` output live in your terminal or notebook); **cluster mode for `spark-submit`'d production jobs** run via a scheduler (Airflow, cron, Databricks Jobs) where nobody is watching the terminal and the job must survive the submitting process exiting.
 
@@ -312,7 +312,7 @@ This matches the data exactly — `source.csv` has 3 blank `user_id` cells (rows
 df.filter((F.col("region") == "North") | (F.col("priority") == "High"))
 ```
 
-**Result (genuine `.show()` output):**
+**Result (`.show()` output):**
 ```
 +----------+------+--------+
 |product_id|region|priority|
@@ -340,7 +340,7 @@ df.filter((F.col("region") == "North") | (F.col("priority") == "High"))
 
 **Answer:** `.show(5)` asks Spark for just enough rows to display five — it stops pulling as soon as the driver has them, so memory usage is small and **constant**, completely independent of how big the underlying dataset actually is. `.collect()`, by contrast, is an action that gathers **every row of every partition across the entire cluster back into the Driver's single JVM heap**. On a multi-terabyte dataset, that's terabytes of data trying to land on one machine — a near-guaranteed `OutOfMemoryError` / Driver crash, plus a wave of needless network shuffle, just to "peek" at the data.
 
-**Result (genuine output — identical to the Q3 read-back, since it's the same `df`):**
+**Result (output — identical to the Q3 read-back, since it's the same `df`):**
 ```
 +-------+----------+--------------------+-----------+-----+----------+------+--------+---------+------+
 |user_id|product_id|        product_name|   category|price|base_price|region|priority|   status|amount|

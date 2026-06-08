@@ -1,16 +1,16 @@
 user_id,product_id,product_name,category,price,base_price,region,priority,status,amount
 1,P1001,Wireless Mouse V1,Electronics,29.99,25.42,North,High,Completed,1499.50
 2,P1002,Office Chair Classic,Furniture,189.50,160.59,South,Medium,Completed,948.00
-,P1003,Bluetooth Speaker Mini,Electronics,49.99,42.36,East,Low,Pending,249.95
+3,P1003,Bluetooth Speaker Mini,Electronics,49.99,42.36,East,Low,Pending,249.95
 4,P1004,Standing Desk Pro,Furniture,399.00,338.14,West,High,Completed,1995.00
 5,P1005,Mechanical Keyboard X,Electronics,89.99,76.26,North,Medium,Cancelled,179.98
-,P1006,Ergo Footrest,Furniture,34.50,29.24,South,Low,Completed,69.00
+6,P1006,Ergo Footrest,Furniture,34.50,29.24,South,Low,Completed,69.00
 7,P1007,4K Webcam,Electronics,79.00,66.95,East,High,Completed,1185.00
 8,P1008,Filing Cabinet,Furniture,145.00,122.88,North,Medium,Pending,290.00
 9,P1009,USB-C Hub,Electronics,39.99,33.89,West,Low,Completed,79.98
 10,P1010,Bookshelf Oak,Furniture,210.00,177.97,South,High,Completed,1050.00
 11,P1011,Noise Cancelling Headphones,Electronics,159.00,134.75,North,High,Completed,1590.00
-,P1012,Desk Lamp LED,Furniture,24.99,21.18,East,Low,Cancelled,49.98
+12,P1012,Desk Lamp LED,Furniture,24.99,21.18,East,Low,Cancelled,49.98
 13,P1013,Graphics Tablet,Electronics,229.00,194.07,West,Medium,Completed,458.00
 14,P1014,Mesh Office Chair,Furniture,175.00,148.31,North,Medium,Pending,350.00
 15,P1015,Portable SSD 1TB,Electronics,109.00,92.37,South,High,Completed,1308.00
