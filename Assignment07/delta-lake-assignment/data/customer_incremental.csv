@@ -1,0 +1,16 @@
+customer_id,customer_name,segment,country,city,state,postal_code,region,last_updated
+NP-18670,Nora Paige,Corporate,United States,Edmond (Updated),Oklahoma,73034,Central,2024-06-01
+LC-16930,Linda Cazamias,Home Office,United States,Naperville (Updated),Illinois,60540,Central,2024-06-01
+CB-12535,Claudia Bergmann,Home Office,United States,Chapel Hill (Updated),North Carolina,27514,South,2024-06-01
+BM-11140,Becky Martin,Corporate,United States,San Antonio (Updated),Texas,78207,Central,2024-06-01
+RD-19900,Ruben Dartt,Corporate,United States,Carlsbad (Updated),New Mexico,88220,West,2024-06-01
+HM-14980,Henry MacAllister,Corporate,United States,New York City (Updated),New York,10009,East,2024-06-01
+SH-19975,Sally Hughsby,Home Office,United States,San Francisco (Updated),California,94122,West,2024-06-01
+AC-10420,Alyssa Crouse,Home Office,United States,San Francisco (Updated),California,94122,West,2024-06-01
+JE-16165,Justin Ellison,Home Office,United States,Franklin (Updated),Wisconsin,53132,Central,2024-06-01
+JK-15640,Jim Kriz,Consumer,United States,New York City (Updated),New York,10009,East,2024-06-01
+GT-14755,Guy Thornton,Consumer,United States,Harlingen,Texas,78550,Central,2024-06-01
+AG-10900,Arthur Gainer,Consumer,United States,Tucson,Arizona,85705,West,2024-06-01
+MM-18280,Muhammed MacIntyre,Corporate,United States,Quincy,Illinois,62301,Central,2024-06-01
+AR-10405,Allen Rosenblatt,Corporate,United States,Franklin,Massachusetts,2038,East,2024-06-01
+RA-19915,Russell Applegate,Consumer,United States,Houston,Texas,77095,Central,2024-06-01
