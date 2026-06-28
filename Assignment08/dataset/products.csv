@@ -1,0 +1,541 @@
+product_id,product_name,category,subcategory,cost_price
+PROD00001,Himself Educational,Books,Educational,772.29
+PROD00002,Morning Audio,Electronics,Audio,1418.4
+PROD00003,Action Accessorie,Electronics,Accessories,1446.22
+PROD00004,Recognize Audio,Electronics,Audio,642.28
+PROD00005,Edge Audio,Electronics,Audio,668.13
+PROD00006,Thus Accessorie,Electronics,Accessories,103.19
+PROD00007,Sure Decor,Home,Decor,898.1
+PROD00008,Positive Bedding,Home,Bedding,648.15
+PROD00009,Return Laptop,Electronics,Laptops,1332.7
+PROD00010,Company Comic,Books,Comics,601.1
+PROD00011,Sometimes Accessorie,Electronics,Accessories,999.34
+PROD00012,My Furniture,Home,Furniture,714.03
+PROD00013,  Challenge Phone   ,Electronics,Phones,1118.16
+PROD00014,Like Furniture,Home,Furniture,881.77
+PROD00015,Collection Kitchen,Home,Kitchen,1311.04
+PROD00016,Country Fiction,Books,Fiction,902.61
+PROD00017,Others Kitchen,Home,Kitchen,323.04
+PROD00018,Others NonFiction,Books,NonFiction,528.42
+PROD00019,Receive Kitchen,Home,Kitchen,863.28
+PROD00020,Turn Fiction,Books,Fiction,988.46
+PROD00021,child kitchen,Home,Kitchen,1382.7
+PROD00022,SIMPLY KITCHEN,Home,Kitchen,851.65
+PROD00023,  Sign Fiction   ,Books,Fiction,142.18
+PROD00024,Member Footwear,Clothing,Footwear,514.64
+PROD00025,Wrong Decor,Home,Decor,1166.37
+PROD00026,  Her Phone   ,Electronics,Phones,1012.58
+PROD00027,Amount Bedding,Home,Bedding,731.06
+PROD00028,Discuss Educational,Books,Educational,1133.64
+PROD00029,Sort Accessorie,Electronics,Accessories,428.45
+PROD00030,  mETHOD cOMIC ,Books,Comics,1476.75
+PROD00031,EACH PHONE,Electronics,Phones,1152.19
+PROD00032,At Decor,Home,Decor,16.56
+PROD00033,EVERYTHING NONFICTION,Books,NonFiction,752.89
+PROD00034,Hope Kitchen,Home,Kitchen,1114.35
+PROD00035,East Fiction,Books,Fiction,121.4
+PROD00036,And Bedding,Home,Bedding,1065.7
+PROD00037,  Relate Comic   ,Books,Comics,1449.47
+PROD00038,Design Footwear,Clothing,Footwear,1380.06
+PROD00039,National Audio,Electronics,Audio,368.76
+PROD00040,Whatever Fiction,Books,Fiction,468.86
+PROD00041,Strong Furniture,Home,Furniture,256.36
+PROD00042,Herself Laptop,Electronics,Laptops,527.32
+PROD00043,important women,Clothing,Women,299.92
+PROD00044,  mANAGER mEN ,Clothing,Men,698.61
+PROD00045,Whose Comic,Books,Comics,942.69
+PROD00046,  lOOK fOOTWEAR ,Clothing,Footwear,948.92
+PROD00047,Upon Kitchen,Home,Kitchen,115.92
+PROD00048,any educational,Books,Educational,1248.39
+PROD00049,Among Phone,Electronics,Phones,763.07
+PROD00050,Range Fiction,Books,Fiction,1215.67
+PROD00051,Game Kid,Clothing,Kids,754.54
+PROD00052,board audio,Electronics,Audio,1473.67
+PROD00053,  sCORE lAPTOP ,Electronics,Laptops,1486.52
+PROD00054,Near Kid,Clothing,Kids,427.93
+PROD00055,Property Comic,Books,Comics,83.29
+PROD00056,Themselves Kitchen,Home,Kitchen,839.16
+PROD00057,Eye Comic,Books,Comics,1278.09
+PROD00058,THEY KID,Clothing,Kids,1375.54
+PROD00059,  Site Bedding   ,Home,Bedding,467.82
+PROD00060,Everyone Comic,Books,Comics,1006.82
+PROD00061,Particular Audio,Electronics,Audio,32.25
+PROD00062,Off Furniture,Home,Furniture,515.89
+PROD00063,OVER NONFICTION,Books,NonFiction,236.64
+PROD00064,Contain Kitchen,Home,Kitchen,811.96
+PROD00065,However Accessorie,Electronics,Accessories,928.96
+PROD00066,READY NONFICTION,Books,NonFiction,1083.17
+PROD00067,Human Audio,Electronics,Audio,1080.78
+PROD00068,History Comic,Books,Comics,1176.78
+PROD00069,People Women,Clothing,Women,1213.89
+PROD00070,Ready NonFiction,Books,NonFiction,1420.96
+PROD00071,Water Educational,Books,Educational,1168.3
+PROD00072,Thing NonFiction,Books,NonFiction,1202.88
+PROD00073,  bANK kID ,Clothing,Kids,1311.8
+PROD00074,Nation Phone,Electronics,Phones,1145.86
+PROD00075,Enter Bedding,Home,Bedding,225.29
+PROD00076,However Fiction,Books,Fiction,336.95
+PROD00077,Whatever Comic,Books,Comics,625.27
+PROD00078,  Dog Comic   ,Books,Comics,565.49
+PROD00079,Name Accessorie,Electronics,Accessories,1259.57
+PROD00080,into furniture,Home,Furniture,1376.51
+PROD00081,Head NonFiction,Books,NonFiction,706.32
+PROD00082,TECHNOLOGY PHONE,Electronics,Phones,1253.27
+PROD00083,Trip Fiction,Books,Fiction,360.27
+PROD00084,  hAIR pHONE ,Electronics,Phones,98.9
+PROD00085,Message Fiction,Books,Fiction,864.7
+PROD00086,Structure Kid,Clothing,Kids,924.14
+PROD00087,  Meet Footwear   ,Clothing,Footwear,787.61
+PROD00088,Very Kitchen,Home,Kitchen,818.4
+PROD00089,Pm Audio,Electronics,Audio,70.08
+PROD00090,According Comic,Books,Comics,29.28
+PROD00091,  More Accessorie   ,Electronics,Accessories,1158.39
+PROD00092,us furniture,Home,Furniture,1221.2
+PROD00093,Chair Footwear,Clothing,Footwear,720.4
+PROD00094,  lESS wOMEN ,Clothing,Women,60.29
+PROD00095,Company Men,Clothing,Men,1329.26
+PROD00096,Drug Decor,Home,Decor,1483.74
+PROD00097,BALL COMIC,Books,Comics,432.74
+PROD00098,My Accessorie,Electronics,Accessories,1200.02
+PROD00099,Question Educational,Books,Educational,1342.48
+PROD00100,Fast Comic,Books,Comics,746.82
+PROD00101,Development Comic,Books,Comics,781.32
+PROD00102,CITIZEN AUDIO,Electronics,Audio,820.48
+PROD00103,culture kitchen,Home,Kitchen,463.21
+PROD00104,Coach NonFiction,Books,NonFiction,530.56
+PROD00105,High Accessorie,Electronics,Accessories,655.24
+PROD00106,Play Phone,Electronics,Phones,612.28
+PROD00107,  sERIES mEN ,Clothing,Men,57.02
+PROD00108,Technology Laptop,Electronics,Laptops,552.66
+PROD00109,By Fiction,Books,Fiction,1020.2
+PROD00110,Recent Decor,Home,Decor,119.94
+PROD00111,Drug Kid,Clothing,Kids,976.09
+PROD00112,JOIN MEN,Clothing,Men,751.07
+PROD00113,Talk Fiction,Books,Fiction,394.13
+PROD00114,Give NonFiction,Books,NonFiction,431.94
+PROD00115,  Service NonFiction   ,Books,NonFiction,680.8
+PROD00116,Build Fiction,Books,Fiction,1451.5
+PROD00117,Meet Decor,Home,Decor,827.25
+PROD00118,Republican Decor,Home,Decor,1069.15
+PROD00119,Measure Kid,Clothing,Kids,186.44
+PROD00120,  mEASURE wOMEN ,Clothing,Women,44.29
+PROD00121,Develop Bedding,Home,Bedding,829.71
+PROD00122,Performance Phone,Electronics,Phones,1499.39
+PROD00123,Color Educational,Books,Educational,1235.89
+PROD00124,Radio Laptop,Electronics,Laptops,965.3
+PROD00125,These Educational,Books,Educational,520.05
+PROD00126,Item Women,Clothing,Women,1366.51
+PROD00127,Age Phone,Electronics,Phones,459.67
+PROD00128,Either Kid,Clothing,Kids,342.08
+PROD00129,Animal Kitchen,Home,Kitchen,954.41
+PROD00130,Care Furniture,Home,Furniture,923.57
+PROD00131,Painting Laptop,Electronics,Laptops,873.07
+PROD00132,Person Kid,Clothing,Kids,847.61
+PROD00133,college phone,Electronics,Phones,978.44
+PROD00134,Center Fiction,Books,Fiction,942.61
+PROD00135,Professional Decor,Home,Decor,1208.01
+PROD00136,Music Comic,Books,Comics,1034.48
+PROD00137,Among Footwear,Clothing,Footwear,699.34
+PROD00138,Vote Furniture,Home,Furniture,1078.95
+PROD00139,page bedding,Home,Bedding,774.9
+PROD00140,  Choice Accessorie   ,Electronics,Accessories,404.87
+PROD00141,arrive women,Clothing,Women,1418.35
+PROD00142,Compare NonFiction,Books,NonFiction,1353.95
+PROD00143,EVENING DECOR,Home,Decor,749.91
+PROD00144,Win Educational,Books,Educational,748.57
+PROD00145,Couple Audio,Electronics,Audio,1450.2
+PROD00146,nation kid,Clothing,Kids,744.87
+PROD00147,Into Comic,Books,Comics,1271.52
+PROD00148,Place NonFiction,Books,NonFiction,1092.62
+PROD00149,  Organization Comic   ,Books,Comics,857.57
+PROD00150,Public Kid,Clothing,Kids,114.93
+PROD00151,After Comic,Books,Comics,936.75
+PROD00152,Unit Laptop,Electronics,Laptops,593.89
+PROD00153,Serve Decor,Home,Decor,302.59
+PROD00154,SHOULD FICTION,Books,Fiction,1071.82
+PROD00155,RECENTLY EDUCATIONAL,Books,Educational,495.31
+PROD00156,Term Furniture,Home,Furniture,926.67
+PROD00157,Federal Decor,Home,Decor,767.02
+PROD00158,Your Comic,Books,Comics,29.87
+PROD00159,Bed Kitchen,Home,Kitchen,877.63
+PROD00160,Direction Audio,Electronics,Audio,985.11
+PROD00161,List Men,Clothing,Men,259.92
+PROD00162,Policy NonFiction,Books,NonFiction,367.08
+PROD00163,market laptop,Electronics,Laptops,631.08
+PROD00164,Trip NonFiction,Books,NonFiction,1163.58
+PROD00165,Meet Fiction,Books,Fiction,780.43
+PROD00166,Conference Bedding,Home,Bedding,474.06
+PROD00167,Discuss Footwear,Clothing,Footwear,516.78
+PROD00168,Then Decor,Home,Decor,292.43
+PROD00169,Item Kid,Clothing,Kids,341.18
+PROD00170,Plant Decor,Home,Decor,1036.91
+PROD00171,Character Comic,Books,Comics,842.93
+PROD00172,  sTUDY dECOR ,Home,Decor,1344.16
+PROD00173,Pass Comic,Books,Comics,1207.9
+PROD00174,Tend Kitchen,Home,Kitchen,1072.64
+PROD00175,Speak Bedding,Home,Bedding,1122.27
+PROD00176,Court Women,Clothing,Women,410.34
+PROD00177,PRICE FURNITURE,Home,Furniture,367.47
+PROD00178,  rECEIVE wOMEN ,Clothing,Women,498.79
+PROD00179,Much Fiction,Books,Fiction,210.51
+PROD00180,Everything Footwear,Clothing,Footwear,1321.57
+PROD00181,Computer Educational,Books,Educational,1135.09
+PROD00182,Shake Decor,Home,Decor,93.45
+PROD00183,Rich Laptop,Electronics,Laptops,1086.06
+PROD00184,Guess Laptop,Electronics,Laptops,1257.22
+PROD00185,Win Audio,Electronics,Audio,283.54
+PROD00186,  Long Kitchen   ,Home,Kitchen,1393.04
+PROD00187,Pick Decor,Home,Decor,963.76
+PROD00188,Performance NonFiction,Books,NonFiction,704.69
+PROD00189,Authority Men,Clothing,Men,1098.02
+PROD00190,drug furniture,Home,Furniture,1187.2
+PROD00191,Human Women,Clothing,Women,959.9
+PROD00192,Image Educational,Books,Educational,134.67
+PROD00193,Cause Laptop,Electronics,Laptops,718.79
+PROD00194,Boy Men,Clothing,Men,357.1
+PROD00195,Admit Decor,Home,Decor,1085.71
+PROD00196,Degree Accessorie,Electronics,Accessories,1040.69
+PROD00197,Necessary Phone,Electronics,Phones,243.78
+PROD00198,Trade Kitchen,Home,Kitchen,1411.25
+PROD00199,WHERE FURNITURE,Home,Furniture,719.88
+PROD00200,Mother Comic,Books,Comics,826.11
+PROD00201,Return NonFiction,Books,NonFiction,1022.11
+PROD00202,Kind Audio,Electronics,Audio,545.87
+PROD00203,The Phone,Electronics,Phones,1354.82
+PROD00204,  cITIZEN wOMEN ,Clothing,Women,178.78
+PROD00205,  pOLICE fOOTWEAR ,Clothing,Footwear,1213.99
+PROD00206,Big NonFiction,Books,NonFiction,687.91
+PROD00207,Cost Audio,Electronics,Audio,465.71
+PROD00208,Maybe Audio,Electronics,Audio,9.51
+PROD00209,week men,Clothing,Men,1052.08
+PROD00210,Possible Phone,Electronics,Phones,710.75
+PROD00211,PLAN BEDDING,Home,Bedding,1149.91
+PROD00212,American Comic,Books,Comics,576.81
+PROD00213,UNDERSTAND EDUCATIONAL,Books,Educational,982.03
+PROD00214,  sTEP kITCHEN ,Home,Kitchen,795.62
+PROD00215,Night Men,Clothing,Men,1467.84
+PROD00216,Most Educational,Books,Educational,1235.92
+PROD00217,Soldier Footwear,Clothing,Footwear,417.1
+PROD00218,Buy Phone,Electronics,Phones,631.76
+PROD00219,  Better Laptop   ,Electronics,Laptops,892.95
+PROD00220,  Meet Fiction   ,Books,Fiction,606.39
+PROD00221,Receive Women,Clothing,Women,1165.22
+PROD00222,case kid,Clothing,Kids,868.32
+PROD00223,Week Furniture,Home,Furniture,219.17
+PROD00224,Player Footwear,Clothing,Footwear,96.13
+PROD00225,Notice Footwear,Clothing,Footwear,75.09
+PROD00226,Their Bedding,Home,Bedding,481.51
+PROD00227,  aBILITY eDUCATIONAL ,Books,Educational,279.9
+PROD00228,Watch NonFiction,Books,NonFiction,454.6
+PROD00229,Writer Footwear,Clothing,Footwear,845.77
+PROD00230,Stage NonFiction,Books,NonFiction,386.22
+PROD00231,Resource Kitchen,Home,Kitchen,1271.46
+PROD00232,  rANGE lAPTOP ,Electronics,Laptops,1012.14
+PROD00233,LAWYER PHONE,Electronics,Phones,721.69
+PROD00234,Nearly Decor,Home,Decor,27.92
+PROD00235,Kitchen Men,Clothing,Men,1132.72
+PROD00236,Hospital Women,Clothing,Women,362.8
+PROD00237,Two Decor,Home,Decor,802.81
+PROD00238,Animal Decor,Home,Decor,771.66
+PROD00239,  sAVE eDUCATIONAL ,Books,Educational,1143.64
+PROD00240,Next Furniture,Home,Furniture,623.83
+PROD00241,  lAUGH wOMEN ,Clothing,Women,446.31
+PROD00242,DROP KID,Clothing,Kids,751.46
+PROD00243,Writer Decor,Home,Decor,735.49
+PROD00244,suffer educational,Books,Educational,258.05
+PROD00245,Meet NonFiction,Books,NonFiction,815.49
+PROD00246,Strategy Phone,Electronics,Phones,116.12
+PROD00247,Specific Phone,Electronics,Phones,1264.6
+PROD00248,I Men,Clothing,Men,18.67
+PROD00249,  hARD cOMIC ,Books,Comics,990.63
+PROD00250,Perform Phone,Electronics,Phones,619.95
+PROD00251,Summer Accessorie,Electronics,Accessories,433.6
+PROD00252,  Site NonFiction   ,Books,NonFiction,788.96
+PROD00253,Whatever Women,Clothing,Women,382.37
+PROD00254,Sort Decor,Home,Decor,123.13
+PROD00255,Third Educational,Books,Educational,1485.4
+PROD00256,Same Kid,Clothing,Kids,1272.56
+PROD00257,Parent Phone,Electronics,Phones,568.87
+PROD00258,Billion Fiction,Books,Fiction,1055.75
+PROD00259,Large Audio,Electronics,Audio,969.14
+PROD00260,Center Kitchen,Home,Kitchen,1379.13
+PROD00261,Environmental Women,Clothing,Women,1039.97
+PROD00262,  Me Comic   ,Books,Comics,1028.22
+PROD00263,space kitchen,Home,Kitchen,28.41
+PROD00264,Early Women,Clothing,Women,1070.5
+PROD00265,Where Fiction,Books,Fiction,848.12
+PROD00266,Town Comic,Books,Comics,1110.92
+PROD00267,  bECAUSE aCCESSORIE ,Electronics,Accessories,352.06
+PROD00268,Federal Accessorie,Electronics,Accessories,922.73
+PROD00269,piece comic,Books,Comics,1176.4
+PROD00270,  uNDER eDUCATIONAL ,Books,Educational,650.61
+PROD00271,Of Fiction,Books,Fiction,446.59
+PROD00272,ISSUE MEN,Clothing,Men,573.1
+PROD00273,Even Footwear,Clothing,Footwear,164.29
+PROD00274,Current Accessorie,Electronics,Accessories,1143.21
+PROD00275,  aCCEPT lAPTOP ,Electronics,Laptops,676.02
+PROD00276,security fiction,Books,Fiction,833.56
+PROD00277,  sIX bEDDING ,Home,Bedding,584.76
+PROD00278,Strategy Laptop,Electronics,Laptops,258.53
+PROD00279,account nonfiction,Books,NonFiction,406.27
+PROD00280,participant men,Clothing,Men,634.55
+PROD00281,Necessary Fiction,Books,Fiction,1416.61
+PROD00282,Buy NonFiction,Books,NonFiction,207.56
+PROD00283,Nature Audio,Electronics,Audio,932.19
+PROD00284,Account Bedding,Home,Bedding,1224.14
+PROD00285,How Kid,Clothing,Kids,1421.18
+PROD00286,Real Footwear,Clothing,Footwear,1447.04
+PROD00287,Describe Decor,Home,Decor,951.19
+PROD00288,Rise Kid,Clothing,Kids,1225.66
+PROD00289,SUMMER COMIC,Books,Comics,890.38
+PROD00290,Four Men,Clothing,Men,695.13
+PROD00291,Issue Footwear,Clothing,Footwear,1247.77
+PROD00292,High Audio,Electronics,Audio,213.07
+PROD00293,Both Furniture,Home,Furniture,235.44
+PROD00294,  cLEAR eDUCATIONAL ,Books,Educational,875.45
+PROD00295,Last Fiction,Books,Fiction,542.5
+PROD00296,Reach Phone,Electronics,Phones,988.11
+PROD00297,Pay Furniture,Home,Furniture,71.22
+PROD00298,Environment Comic,Books,Comics,648.53
+PROD00299,Every Phone,Electronics,Phones,768.46
+PROD00300,Top Footwear,Clothing,Footwear,697.28
+PROD00301,North Kid,Clothing,Kids,726.74
+PROD00302,Land Bedding,Home,Bedding,133.35
+PROD00303,Other Kid,Clothing,Kids,685.72
+PROD00304,History Footwear,Clothing,Footwear,150.95
+PROD00305,  Population Comic   ,Books,Comics,1216.23
+PROD00306,Fact Phone,Electronics,Phones,973.72
+PROD00307,Response Women,Clothing,Women,830.11
+PROD00308,Industry Bedding,Home,Bedding,351.62
+PROD00309,  sOMEONE nONfICTION ,Books,NonFiction,596.4
+PROD00310,Democrat Footwear,Clothing,Footwear,586.31
+PROD00311,Job Women,Clothing,Women,1057.12
+PROD00312,Old Phone,Electronics,Phones,807.65
+PROD00313,  Step Decor   ,Home,Decor,397.22
+PROD00314,Onto Comic,Books,Comics,918.91
+PROD00315,Meeting Accessorie,Electronics,Accessories,689.5
+PROD00316,Country Kid,Clothing,Kids,887.3
+PROD00317,hospital kid,Clothing,Kids,179.84
+PROD00318,Operation Furniture,Home,Furniture,630.27
+PROD00319,One Footwear,Clothing,Footwear,732.57
+PROD00320,Member Women,Clothing,Women,214.74
+PROD00321,Environment Bedding,Home,Bedding,1298.96
+PROD00322,  fOOD aUDIO ,Electronics,Audio,1445.92
+PROD00323,Participant Educational,Books,Educational,626.37
+PROD00324,  Guy Educational   ,Books,Educational,1194.84
+PROD00325,STAFF KID,Clothing,Kids,808.72
+PROD00326,Season Footwear,Clothing,Footwear,1159.96
+PROD00327,Information Fiction,Books,Fiction,405.49
+PROD00328,Simply Kitchen,Home,Kitchen,664.84
+PROD00329,CERTAINLY FOOTWEAR,Clothing,Footwear,450.07
+PROD00330,Top Audio,Electronics,Audio,1293.99
+PROD00331,Treat Audio,Electronics,Audio,180.49
+PROD00332,Receive Women,Clothing,Women,883.95
+PROD00333,BY BEDDING,Home,Bedding,1178.35
+PROD00334,Small Men,Clothing,Men,800.76
+PROD00335,Drug Kid,Clothing,Kids,442.49
+PROD00336,  lIKELY kITCHEN ,Home,Kitchen,1378.56
+PROD00337,Stay Furniture,Home,Furniture,203.37
+PROD00338,Scene Kid,Clothing,Kids,1143.4
+PROD00339,color educational,Books,Educational,943.58
+PROD00340,  Black Educational   ,Books,Educational,607.26
+PROD00341,Difficult Decor,Home,Decor,734.63
+PROD00342,Movie Phone,Electronics,Phones,690.38
+PROD00343,Institution Kitchen,Home,Kitchen,599.59
+PROD00344,Stock NonFiction,Books,NonFiction,487.68
+PROD00345,Ground Decor,Home,Decor,200.24
+PROD00346,Suddenly Comic,Books,Comics,1144.57
+PROD00347,Oil Phone,Electronics,Phones,1255.87
+PROD00348,Positive Phone,Electronics,Phones,241.19
+PROD00349,Same Fiction,Books,Fiction,644.56
+PROD00350,return kid,Clothing,Kids,144.54
+PROD00351,SEAT DECOR,Home,Decor,82.42
+PROD00352,Area Furniture,Home,Furniture,141.34
+PROD00353,  College Phone   ,Electronics,Phones,203.39
+PROD00354,improve footwear,Clothing,Footwear,1226.58
+PROD00355,Provide NonFiction,Books,NonFiction,347.28
+PROD00356,accept phone,Electronics,Phones,1322.08
+PROD00357,Summer Footwear,Clothing,Footwear,1130.97
+PROD00358,  Benefit Women   ,Clothing,Women,917.43
+PROD00359,Than Footwear,Clothing,Footwear,323.52
+PROD00360,Check Footwear,Clothing,Footwear,666.36
+PROD00361,Market Men,Clothing,Men,214.32
+PROD00362,With Audio,Electronics,Audio,646.94
+PROD00363,Plan Women,Clothing,Women,130.95
+PROD00364,Learn Kitchen,Home,Kitchen,989.32
+PROD00365,Behavior Furniture,Home,Furniture,766.74
+PROD00366,Attack Comic,Books,Comics,1176.78
+PROD00367,Everyone Footwear,Clothing,Footwear,365.42
+PROD00368,Doctor Phone,Electronics,Phones,1401.22
+PROD00369,Hospital Footwear,Clothing,Footwear,854.73
+PROD00370,Base Furniture,Home,Furniture,1431.91
+PROD00371,Politics Phone,Electronics,Phones,25.62
+PROD00372,Always Men,Clothing,Men,1423.28
+PROD00373,Shake Comic,Books,Comics,754.07
+PROD00374,If Educational,Books,Educational,128.23
+PROD00375,  Word Kid   ,Clothing,Kids,769.4
+PROD00376,Institution Women,Clothing,Women,589.14
+PROD00377,Positive Accessorie,Electronics,Accessories,1096.29
+PROD00378,  rEALITY mEN ,Clothing,Men,178.4
+PROD00379,Near Accessorie,Electronics,Accessories,988.79
+PROD00380,FEW MEN,Clothing,Men,1053.74
+PROD00381,Seek Footwear,Clothing,Footwear,786.89
+PROD00382,Picture Furniture,Home,Furniture,1125.92
+PROD00383,Art Kitchen,Home,Kitchen,48.89
+PROD00384,Young Comic,Books,Comics,398.11
+PROD00385,Staff Audio,Electronics,Audio,543.39
+PROD00386,Ten NonFiction,Books,NonFiction,386.4
+PROD00387,  Continue Phone   ,Electronics,Phones,70.84
+PROD00388,push laptop,Electronics,Laptops,577.55
+PROD00389,Miss Women,Clothing,Women,1286.94
+PROD00390,Leg NonFiction,Books,NonFiction,627.3
+PROD00391,Action Decor,Home,Decor,859.45
+PROD00392,  Defense Phone   ,Electronics,Phones,1431.35
+PROD00393,To Audio,Electronics,Audio,1161.42
+PROD00394,  rEALIZE dECOR ,Home,Decor,16.91
+PROD00395,Word Kid,Clothing,Kids,459.34
+PROD00396,Summer Footwear,Clothing,Footwear,1457.93
+PROD00397,  nATIONAL wOMEN ,Clothing,Women,40.75
+PROD00398,Feeling Kitchen,Home,Kitchen,7.19
+PROD00399,DAY COMIC,Books,Comics,632.62
+PROD00400,Along Laptop,Electronics,Laptops,144.07
+PROD00401,Step Footwear,Clothing,Footwear,561.88
+PROD00402,Place Phone,Electronics,Phones,957.64
+PROD00403,Mrs Fiction,Books,Fiction,98.11
+PROD00404,Name Women,Clothing,Women,1277.12
+PROD00405,Say Comic,Books,Comics,411.57
+PROD00406,  Each Laptop   ,Electronics,Laptops,237.34
+PROD00407,Possible Footwear,Clothing,Footwear,612.74
+PROD00408,Condition Furniture,Home,Furniture,697.7
+PROD00409,represent phone,Electronics,Phones,1240.45
+PROD00410,Also Laptop,Electronics,Laptops,495.05
+PROD00411,Here Laptop,Electronics,Laptops,597.39
+PROD00412,Edge Accessorie,Electronics,Accessories,1486.06
+PROD00413,Real Audio,Electronics,Audio,836.15
+PROD00414,A Men,Clothing,Men,1206.83
+PROD00415,COACH MEN,Clothing,Men,200.42
+PROD00416,Before Comic,Books,Comics,1406.67
+PROD00417,Fact Accessorie,Electronics,Accessories,117.11
+PROD00418,State Laptop,Electronics,Laptops,667.93
+PROD00419,Instead Men,Clothing,Men,1244.89
+PROD00420,  hEAD kITCHEN ,Home,Kitchen,80.7
+PROD00421,Relationship Educational,Books,Educational,577.18
+PROD00422,Indicate NonFiction,Books,NonFiction,1362.91
+PROD00423,Into Decor,Home,Decor,227.2
+PROD00424,Peace Kid,Clothing,Kids,1324.75
+PROD00425,  dEEP fICTION ,Books,Fiction,210.17
+PROD00426,National Women,Clothing,Women,1204.24
+PROD00427,Administration Audio,Electronics,Audio,541.87
+PROD00428,Since Comic,Books,Comics,756.08
+PROD00429,score comic,Books,Comics,897.69
+PROD00430,  aUTHORITY aCCESSORIE ,Electronics,Accessories,796.5
+PROD00431,WIDE WOMEN,Clothing,Women,403.46
+PROD00432,Believe Laptop,Electronics,Laptops,1474.08
+PROD00433,Often Comic,Books,Comics,1487.36
+PROD00434,feel women,Clothing,Women,1210.28
+PROD00435,She Kitchen,Home,Kitchen,530.76
+PROD00436,Themselves Women,Clothing,Women,1216.55
+PROD00437,  Operation Comic   ,Books,Comics,139.93
+PROD00438,  wHO wOMEN ,Clothing,Women,6.02
+PROD00439,Pass Women,Clothing,Women,270.3
+PROD00440,HAPPEN KITCHEN,Home,Kitchen,1162.68
+PROD00441,Hand Kitchen,Home,Kitchen,1413.18
+PROD00442,Team Fiction,Books,Fiction,487.29
+PROD00443,Factor Footwear,Clothing,Footwear,1441.19
+PROD00444,Draw Furniture,Home,Furniture,845.16
+PROD00445,Police Furniture,Home,Furniture,1222.61
+PROD00446,Day Comic,Books,Comics,445.3
+PROD00447,Look Men,Clothing,Men,1423.3
+PROD00448,wonder fiction,Books,Fiction,1381.95
+PROD00449,International Men,Clothing,Men,215.26
+PROD00450,Paper Laptop,Electronics,Laptops,482.68
+PROD00451,Above Accessorie,Electronics,Accessories,401.49
+PROD00452,Every Men,Clothing,Men,1181.59
+PROD00453,Continue Phone,Electronics,Phones,1100.21
+PROD00454,Investment Footwear,Clothing,Footwear,571.18
+PROD00455,Move Fiction,Books,Fiction,1184.15
+PROD00456,Both Women,Clothing,Women,1199.8
+PROD00457,operation accessorie,Electronics,Accessories,1427.73
+PROD00458,  bABY aCCESSORIE ,Electronics,Accessories,245.55
+PROD00459,Most Phone,Electronics,Phones,1477.99
+PROD00460,Financial Fiction,Books,Fiction,982.18
+PROD00461,grow nonfiction,Books,NonFiction,312.3
+PROD00462,Your Footwear,Clothing,Footwear,1084.45
+PROD00463,But Decor,Home,Decor,148.39
+PROD00464,suggest educational,Books,Educational,10.7
+PROD00465,Must Accessorie,Electronics,Accessories,939.51
+PROD00466,EVEN NONFICTION,Books,NonFiction,260.39
+PROD00467,Under Kitchen,Home,Kitchen,177.69
+PROD00468,Note Educational,Books,Educational,993.25
+PROD00469,  tAX aUDIO ,Electronics,Audio,557.26
+PROD00470,Student Fiction,Books,Fiction,700.26
+PROD00471,Paper Kid,Clothing,Kids,230.94
+PROD00472,Enough Phone,Electronics,Phones,1213.23
+PROD00473,Rule NonFiction,Books,NonFiction,1261.99
+PROD00474,Level Educational,Books,Educational,357.28
+PROD00475,Huge Kitchen,Home,Kitchen,1281.64
+PROD00476,  oRDER lAPTOP ,Electronics,Laptops,263.45
+PROD00477,Member Women,Clothing,Women,193.65
+PROD00478,Speech Fiction,Books,Fiction,655.91
+PROD00479,Either Kid,Clothing,Kids,1092.02
+PROD00480,Sometimes Phone,Electronics,Phones,599.05
+PROD00481,Group Decor,Home,Decor,1376.16
+PROD00482,STAND AUDIO,Electronics,Audio,226.56
+PROD00483,Low Phone,Electronics,Phones,155.98
+PROD00484,Responsibility Decor,Home,Decor,399.88
+PROD00485,magazine educational,Books,Educational,607.45
+PROD00486,Watch Fiction,Books,Fiction,1319.04
+PROD00487,Peace Men,Clothing,Men,1381.65
+PROD00488,Training Kitchen,Home,Kitchen,1191.51
+PROD00489,Ahead Decor,Home,Decor,1288.06
+PROD00490,  mEET lAPTOP ,Electronics,Laptops,1162.18
+PROD00491,But Decor,Home,Decor,909.44
+PROD00492,Evening Laptop,Electronics,Laptops,1370.58
+PROD00493,Author Educational,Books,Educational,1301.45
+PROD00494,  iDEA lAPTOP ,Electronics,Laptops,207.8
+PROD00495,PROPERTY LAPTOP,Electronics,Laptops,1256.28
+PROD00496,Story Men,Clothing,Men,1377.46
+PROD00497,Discussion Kid,Clothing,Kids,699.01
+PROD00498,Research Fiction,Books,Fiction,366.7
+PROD00499,  sCIENCE eDUCATIONAL ,Books,Educational,882.39
+PROD00500,drug decor,Home,Decor,1124.7
+PROD00501,  Such Accessorie   ,Electronics,Accessories,248.55
+PROD00502,Four Women,Clothing,Women,1018.15
+PROD00503,Itself Bedding,Home,Bedding,1297.62
+PROD00504,Head Audio,Electronics,Audio,972.82
+PROD00505,Name Laptop,Electronics,Laptops,1208.6
+PROD00506,North Decor,Home,Decor,567.83
+PROD00507,Act Bedding,Home,Bedding,702.71
+PROD00508,school fiction,Books,Fiction,844.38
+PROD00509,There Decor,Home,Decor,725.2
+PROD00510,Everyone Decor,Home,Decor,1292.93
+PROD00511,ENERGY DECOR,Home,Decor,1350.03
+PROD00512,Field Comic,Books,Comics,1083.32
+PROD00513,Better Comic,Books,Comics,630.76
+PROD00514,Inside Fiction,Books,Fiction,1492.16
+PROD00515,Report Kid,Clothing,Kids,337.43
+PROD00516,Smile Comic,Books,Comics,1268.9
+PROD00517,TEND KID,Clothing,Kids,1112.67
+PROD00518,Guess Kid,Clothing,Kids,337.27
+PROD00519,Bag Kid,Clothing,Kids,1330.83
+PROD00520,Once Decor,Home,Decor,698.32
+PROD00521,  Word Audio   ,Electronics,Audio,710.97
+PROD00522,Could Men,Clothing,Men,575.6
+PROD00523,MAYBE BEDDING,Home,Bedding,210.36
+PROD00524,Former Kid,Clothing,Kids,856.26
+PROD00525,Health NonFiction,Books,NonFiction,1074.92
+PROD00526,Discover Audio,Electronics,Audio,1480.03
+PROD00527,wall kitchen,Home,Kitchen,318.03
+PROD00528,Painting Women,Clothing,Women,1146.54
+PROD00529,Exist Laptop,Electronics,Laptops,952.06
+PROD00530,Cover Educational,Books,Educational,578.06
+PROD00531,Your Laptop,Electronics,Laptops,1425.35
+PROD00532,  Skin Furniture   ,Home,Furniture,941.9
+PROD00533,Result Women,Clothing,Women,519.8
+PROD00534,Wonder Men,Clothing,Men,885.06
+PROD00535,Where Men,Clothing,Men,450.81
+PROD00536,Customer Bedding,Home,Bedding,896.57
+PROD00537,Moment Bedding,Home,Bedding,1493.23
+PROD00538,Since Bedding,Home,Bedding,286.7
+PROD00539,DECISION FICTION,Books,Fiction,320.73
+PROD00540,  Easy Laptop   ,Electronics,Laptops,565.91
